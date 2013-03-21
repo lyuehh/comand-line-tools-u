@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+
+var uii = require('../lib/uii').uii;
+uii(process.argv[2]);
