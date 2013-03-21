@@ -9,7 +9,8 @@
     "url": "http://lyuehh.com"
   },
   "bin": {
-    "": ""
+    "udtn": "./bin/udtn",
+    "uii": "./bin/uii"
   },
   "main": "",
   "dependencies": {
