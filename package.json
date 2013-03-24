@@ -1,6 +1,6 @@
 {
   "name": "comand-line-tools-u",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "homepage": "https://github.com/lyuehh/command-line-tools-u",
   "description": "some ci utils",
   "author": {
@@ -20,6 +20,8 @@
     "request": "*"
   },
   "devDependencies": {
+    "mocha": "*",
+    "should": "*"
   },
   "engines": {
     "node": ">=0.8.0"
