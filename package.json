@@ -1,6 +1,6 @@
 {
   "name": "comand-line-tools-u",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/lyuehh/command-line-tools-u",
   "description": "some ci utils",
   "author": {
@@ -10,7 +10,10 @@
   },
   "bin": {
     "udtn": "./bin/udtn",
-    "uii": "./bin/uii"
+    "uii": "./bin/uii",
+    "uweather": "./bin/uweather",
+    "uletter": "./bin/uletter",
+    "uweek": "../bin/uweek"
   },
   "main": "",
   "dependencies": {

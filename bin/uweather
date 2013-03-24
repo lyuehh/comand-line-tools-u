@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+
+var uweather = require('../lib/uweather').uweather;
+uweather(process.argv[2]);
