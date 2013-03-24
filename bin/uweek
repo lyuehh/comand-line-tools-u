@@ -1,4 +1,4 @@
 #!/usr/bin/env node
 
 var uweek = require('../lib/uweek').uweek;
-uweek(process.argv[2]);
+console.log(uweek(process.argv[2]));
