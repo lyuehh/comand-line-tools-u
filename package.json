@@ -13,7 +13,8 @@
     "uii": "./bin/uii",
     "uweather": "./bin/uweather",
     "uletter": "./bin/uletter",
-    "uweek": "./bin/uweek"
+    "uweek": "./bin/uweek",
+    "unum": "./bin/unum"
   },
   "main": "",
   "dependencies": {

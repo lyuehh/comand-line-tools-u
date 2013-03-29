@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+
+var unum = require('../lib/pi/unum').unum;
+console.log(unum(process.argv[2]));
