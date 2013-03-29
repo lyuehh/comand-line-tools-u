@@ -2,7 +2,6 @@
 var unum = require('../lib/pi/unum').unum;
 var exec = require("child_process").exec;
 var fs = require("fs");
-var config = JSON.parse(fs.readFileSync("../.commandrc"));
 
 var child;
 var n = process.argv[2];
@@ -11,7 +10,7 @@ if(!n) {
   process.exit(1);
 }
 console.log(unum(n));
-fs.exists(config.home, function(exists) {
+fs.exists('/Users/weiwei/Downloads/1-100/', function(exists) {
   if(exists) {
     child = exec('open ~/Downloads/1-100/' + n + '*', function(err, stdout, stderr) {
       if(err) {
