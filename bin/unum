@@ -1,4 +1,23 @@
 #!/usr/bin/env node
-
 var unum = require('../lib/pi/unum').unum;
-console.log(unum(process.argv[2]));
+var exec = require("child_process").exec;
+var fs = require("fs");
+var config = JSON.parse(fs.readFileSync("../.commandrc"));
+
+var child;
+var n = process.argv[2];
+if(!n) {
+  console.log("Usage: unum 20");
+  process.exit(1);
+}
+console.log(unum(n));
+fs.exists(config.home, function(exists) {
+  if(exists) {
+    child = exec('open ~/Downloads/1-100/' + n + '*', function(err, stdout, stderr) {
+      if(err) {
+        console.log("picture not found!!");
+      }
+    });
+  }
+});
+
